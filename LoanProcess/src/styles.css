@@ -1,0 +1,622 @@
+body {
+    list-style-type: none;
+    margin: 0;
+    background: url('./assets/images/banner.jpg') no-repeat;
+    background-size: cover;
+    height: 97vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* login Page */
+.loginSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url('./assets/images/login.jpg') no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 65%;
+}
+
+.loginRight {
+    width: 330px;
+    height: 350px;
+    opacity: .96;
+    border-radius: 10px;
+    position: fixed;
+    top: 110px;
+    left: 360px;
+}
+
+.loginRight:after {
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 350px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    top: 0;
+}
+
+.loginBox {
+    z-index: 9;
+    position: relative;
+    padding: 20px;
+}
+
+.loginBox h4 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    position: relative;
+    color: #0e2174;
+    display: inline-block;
+}
+
+.loginBox h4:after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 2px;
+    background: #ff3b0d;
+    left: 0;
+    top: 34px;
+    border-radius: 50px;
+}
+
+/* login Page */
+
+/* Common Css */
+.d-flex {
+    display: flex;
+}
+
+.innerSection {
+    width: 90%;
+    background: #fff;
+    margin: 0px auto 0;
+    border-radius: 10px;
+    padding: 10px 25px;
+    height: Calc(100vh - 180px);
+    overflow-y: auto;
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+select.form-control {
+    height: 28px;
+}
+
+.col-md-12 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.row>* {
+    max-width: 100%;
+    padding-right: calc(1.5rem* .5);
+    padding-left: calc(1.5rem* .5);
+    margin-top: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    display: grid;
+    border: 1px solid #b7e1e4;
+    height: 24px;
+    width: 85%;
+    border-radius: 3px;
+    color: #424b83;
+    font-size: 13px;
+}
+
+.defaultVal {
+    color: #424b83;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.eligibleMsg p {
+    margin: 0;
+}
+
+.eligibleMsg {
+    text-align: center;
+    background: #ff8585;
+    width: 40%;
+    margin: 0 auto 40px;
+    padding: 6px 0;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+label {
+    margin-bottom: 2px !important;
+    display: inline-block;
+    font-size: 14px;
+    color: #363535dd;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group-text {
+    border: 1px solid #b7e1e4;
+    border-radius: 0 3px 3px 0;
+    height: 24px;
+    padding: 0 5px;
+}
+
+.input-group-text img {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+}
+
+.input-group input.form-control {
+    border-right: 0;
+    display: flex;
+    padding: 0px 5px 0;
+    border-radius: 3px 0px 0 3px;
+}
+
+button.btn.btn-primary {
+    padding: 10px 32px;
+    background: #5e2ced;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button.btn.btn-danger {
+    padding: 10px 32px;
+    background: #fa6868;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.btn.btn-primary:hover {
+    box-shadow: 0px 2px 5px 0px #8863f2;
+    transition: all 0.3s ease-in;
+}
+
+button.btn.btn-danger:hover {
+    box-shadow: 0px 2px 5px 0px #fa6868;
+    transition: all 0.3s ease-in;
+}
+
+.popImg img {
+    width: 100%;
+}
+
+.popImg {
+    width: 30%;
+}
+
+.congrats {
+    display: flex;
+    gap: 30px;
+}
+
+.CongratSec h4 {
+    font-size: 25px;
+    color: #0e2174;
+    margin-bottom: 20px;
+}
+
+.btnSec {
+    margin-top: 30px;
+}
+
+.CongratSec span {
+    font-weight: bold;
+    color: #0e2174;
+    font-size: 16px;
+}
+
+.signbox img {
+    width: 100%;
+    height: 160px;
+}
+
+.signbox {
+    width: 200px;
+    cursor: pointer;
+}
+
+.signature {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.esign p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #4256ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.CongratSec p {
+    margin: 0 0 6px;
+}
+
+.btn_footer {
+    text-align: center;
+}
+
+.title h4 {
+    font-size: 16px;
+    margin: 10px 0 25px;
+    position: relative;
+    color: #0e2174;
+    display: inline-block;
+}
+
+.title h4:after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 2px;
+    background: #ff3b0d;
+    left: 0;
+    top: 17px;
+    border-radius: 50px;
+    color: #363535dd;
+}
+
+/* Common Css */
+/* modal css */
+.modal {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+.modal::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+}
+
+.modal-dialog {
+    background: #fff;
+    position: relative;
+    z-index: 999;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+h4.modal-title {
+    margin: 0;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #d8d3d3;
+
+}
+
+.modal-footer button.btn.btn-primary {
+    padding: 4px 18px;
+}
+
+.modal-body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.modal-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #d8d3d3;
+}
+
+.otpsection input:focus-visible {
+    outline: 0;
+}
+
+.otpsection {
+    display: flex;
+    gap: 10px;
+}
+
+.otpsection input.form-control {
+    border: 0;
+    border-bottom: 1px solid #b7e1e4;
+    border-radius: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div#otpSucc {
+    text-align: center;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+div#otpsucess {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidemenu ul {
+    display: flex;
+    justify-content: center;
+}
+
+button.btn {
+    margin-right: 5px;
+}
+
+.sidemenu ul li:last-child {
+    padding-bottom: 0;
+}
+
+.sidemenu li {
+    list-style: none;
+    padding: 45px 0 0;
+    position: relative;
+    display: flex;
+    width: 20%;
+}
+
+li.active span.dot {
+    background: #5e2ced;
+    color: #fff;
+    border-color: #5e2ced;
+}
+
+.sidemenu li.completed span.dot {
+    background: #0cf10c;
+    border: 1px solid var(--complete-bg);
+    color: var(--color-white);
+}
+
+span.dot {
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 24px;
+    border: 1px solid #3735C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+}
+
+.sidemenu li:after {
+    content: "";
+    background: #a9aad1;
+    position: absolute;
+    left: 14px;
+    width: 100%;
+    height: 1px;
+    top: 38px;
+}
+
+.sidemenu li:last-child:after {
+    display: none;
+}
+
+.sidemenu li.completed:after {
+    content: "";
+    background: #b5d6c7;
+    position: absolute;
+    right: 9px;
+    width: 100%;
+    height: 1px;
+    top: 39px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+#loader {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: rgb(196 196 196 / 91%);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    opacity: 0.8;
+}
+
+div#loader img {
+    width: 10%;
+}
+
+/*scroll css*/
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 8px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px !important;
+    background: #5cbbff;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+    width: 5px !important;
+    background: #f4f7ff;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*scroll css end*/
+@media (min-width:768px) and (max-width:1024px) {
+    .col-md-4 {
+        width: 45%;
+    }
+
+    .loginRight {
+        width: 400px;
+        height: 400px;
+        opacity: .96;
+        border-radius: 10px;
+        position: fixed;
+        top: 320px;
+        left: 190px;
+    }
+
+    .loginRight:after {
+        position: absolute;
+        content: "";
+        width: 400px;
+        height: 400px;
+        background: #fff;
+        border-radius: 10px;
+        top: 0;
+    }
+
+    .innerSection {
+        height: Calc(100vh - 350px);
+    }
+
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .loginRight {
+        top: 110px;
+        left: 24px;
+    }
+
+    p.sideCont {
+        display: none;
+    }
+
+    .innerSection {
+        width: 80%;
+        background: #f7f7f7;
+        margin: 0px auto 0;
+        border-radius: 10px;
+        padding: 10px 25px;
+        height: Calc(100vh - 130px);
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .col-md-4 {
+        width: 100%;
+    }
+
+    .row>* {
+        padding: 0;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .eligibleMsg {
+        width: 100%;
+    }
+
+    .signature {
+        display: block;
+    }
+
+    .signbox {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .esign p {
+        margin-bottom: 30px;
+    }
+
+    .signbox img {
+        width: 80%;
+    }
+
+    .modal-dialog {
+        width: 330px;
+    }
+
+    .congrats {
+        display: block;
+    }
+
+    .popImg {
+        width: 70%;
+    }
+
+    .CongratSec h4 {
+        margin-top: 15px;
+    }
+
+    .sidemenu li {
+        width: 27%;
+    }
+}

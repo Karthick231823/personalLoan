@@ -1,0 +1,66 @@
+<app-side-menu></app-side-menu>
+
+<div class="ContentPanel">
+    <br>
+    <div class="innerSection">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h4>Loan Details</h4>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="eligibleMsg">
+                    <p>Eligible Amount <span><i class="fa fa-inr"></i>&nbsp;2,00,000</span></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Please Enter Required Loan Amount</label>
+                    <input type="number" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Interest %</label>
+                    <div class="defaultVal">
+                        10
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Please Select Repayment (in months)</label>
+                    <select name="" class="form-control" id="">
+                        <option value="">12 months</option>
+                        <option value="">24 months</option>
+                        <option value="">36 months</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Processing fees</label>
+                    <div class="defaultVal">
+                        <i class="fa fa-inr"></i>&nbsp;  1000
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Document fees</label>
+                    <div class="defaultVal">
+                        <i class="fa fa-inr"></i>&nbsp; 500
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="btn_footer">
+            <button class="btn btn-primary" (click)="esinPage()">Accept</button>
+            <button class="btn btn-danger" (click)="logout()">Reject</button>
+        </div>
+    </div>
+
+</div>

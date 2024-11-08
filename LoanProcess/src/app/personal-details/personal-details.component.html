@@ -1,0 +1,170 @@
+
+<app-side-menu></app-side-menu>
+
+<div class="ContentPanel">
+    <br>
+    <div class="innerSection">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h4>Personal Details</h4>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Type</label>
+                    <select name="" class="form-control" id="">
+                        <option value="">Mr</option>
+                        <option value="">Mrs</option>
+                        <option value="">Miss</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">First Name</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Last Name</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">D.O.B</label>
+                    <input type="date" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Age</label>
+                    <input type="number" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Gender</label>
+                    <select name="" class="form-control" id="">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Phone Number</label>
+                    <input type="number" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Alternate Phone Number</label>
+                    <input type="number" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Address 1</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Address 2</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">State</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">District</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Pincode</label>
+                    <input type="number" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Occupation</label>
+                    <select name="" class="form-control" id="mySelect1" (change)="selectChange2()">
+                        <option value="00">--Select--</option>
+                        <option value="01">Salaried</option>
+                        <option value="">Business</option>
+                        <option value="">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4 salaryDet" style="display: none;">
+                <div class="form-group">
+                    <label for="">Employeer Name</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4 salaryDet" style="display: none;">
+                <div class="form-group ">
+                    <label for="">Employeer Address</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4 salaryDet" style="display: none;">
+                <div class="form-group ">
+                    <label for="">Total Income</label>
+                    <input type="number" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Documents</label>
+                    <select name="" class="form-control" id="mySelect" (change)='selectChange()'>
+                        <option value="00">--Select--</option>
+                        <option value="01">PAN</option>
+                        <option value="02">Adhaar</option>
+                        <option value="03">Driving License</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4" style="display: none;" id="document1">
+                <div class="form-group">
+                    <label for="">PAN Number</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4" style="display: none;" id="document2">
+                <div class="form-group">
+                    <label for="">Adhaar Number</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+            <div class="col-md-4" style="display: none;" id="document3">
+                <div class="form-group">
+                    <label for="">Driving License Number</label>
+                    <input type="text" class="form-control" name="" id="">
+                </div>
+            </div>
+
+        </div>
+        <div class="btn_footer">
+            <button class="btn btn-primary" (click)="loanDetailsPage()">Check Eligibility</button>
+        </div>
+    </div>
+</div>

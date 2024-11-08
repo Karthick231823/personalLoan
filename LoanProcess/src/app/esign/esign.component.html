@@ -1,0 +1,99 @@
+
+<app-side-menu></app-side-menu>
+
+
+<div class="ContentPanel">
+    <br>
+    <div class="innerSection">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h4>E-sign</h4>
+                </div>
+            </div>
+            <div class="signature"  >
+                <div class="esign" (click)="branchModal()">
+                    <div class="signbox">
+                        <img src="assets/images/banksign.jpg" alt="">
+                    </div>
+                    <p> Signature to Nearest Branch</p>
+                </div>
+                <div class="esign" (click)="otpSent()">
+                    <div class="signbox">
+                        <img src="assets/images/onlinesign.jpg" alt="">
+                    </div>
+                    <p> Online E-Sign</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="otpsection" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div> -->
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="otpsign" id="otpSucc">
+                    An OTP sent to registered mobile number
+                    <div class="otpsection" >
+                        <input type="text" id="otpInput" class="form-control" maxlength="6" placeholder="Enter 6-digit OTP">
+<!--                        
+                        <input type="tel" pattern="[0-9]*" inputmode="decimal" id="digit01" class="form-control" maxlength="1" >
+                        <input type="tel" pattern="[0-9]*" inputmode="decimal" id="digit02" class="form-control" maxlength="1">
+                        <input type="tel" pattern="[0-9]*" inputmode="decimal" id="digit03" class="form-control" maxlength="1">
+                        <input type="tel" pattern="[0-9]*" inputmode="decimal" id="digit04" class="form-control" maxlength="1">
+                        <input type="tel" pattern="[0-9]*" inputmode="decimal" id="digit05" class="form-control" maxlength="1">
+                        <input type="tel" pattern="[0-9]*" inputmode="decimal" id="digit06" class="form-control" maxlength="1"> -->
+
+                    </div>
+                    
+                </div>
+                <div id="otpsucess" style="display: none;">
+                    <img src="assets/images/tick.png" alt="">
+                    <p>Agreement Signed Successfully!</p>
+                </div>
+                
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer" id="proceed" style="display: none;">
+                <button type="button" class="btn btn-primary" (click)="disbursePage()">ok</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="branchPop" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div> -->
+
+            <!-- Modal body -->
+            <div class="modal-body">
+               <div class="text-center">
+                <p>Please visit nearest Brach to signed the document.</p>
+               </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" (click)="logout()">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
